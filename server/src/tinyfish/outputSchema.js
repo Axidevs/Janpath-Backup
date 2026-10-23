@@ -13,6 +13,7 @@
  * DO NOT generate this from Zod or add disallowed keywords.
  */
 
+
 export const tinyfishOutputSchema = {
   type: 'object',
   required: ['steps', 'facts', 'pages_visited', 'click_path', 'limitations'],
@@ -63,8 +64,7 @@ export const tinyfishOutputSchema = {
             type: 'string'
           },
           url: {
-            type: 'string',
-            format: 'uri'
+            type: 'string'
           },
           verbatim_quote: {
             type: 'string'
@@ -75,8 +75,7 @@ export const tinyfishOutputSchema = {
     pages_visited: {
       type: 'array',
       items: {
-        type: 'string',
-        format: 'uri'
+        type: 'string'
       }
     },
     click_path: {
